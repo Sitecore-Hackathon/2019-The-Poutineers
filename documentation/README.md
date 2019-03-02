@@ -1,16 +1,65 @@
 # Documentation
 
-Dylan Was Here!
-
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
-
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Best enhancement to the Sitecore Admin (XP) UI for Content Editors & Marketers
+
+## Pre-requisites
+
+The Social Assistant can run on any of the latest versions of Sitecore, and has been tested against:
+
+- Sitecore 9.1 XP, XM
+- Sitecore 9.0.2 XP, XM
+
+## Installation
+
+### Solution
+
+To install the solution to start making changes to the implementation, follow the steps below.
+
+1. Clone the repository to your computer.
+2. Update the configuration to match your environment.
+
+<script src="https://gist.github.com/sitecoremaster/21eb4aba96d837c892e97f26173d1b87.js"></script>
+
+<script src="https://gist.github.com/sitecoremaster/da402d25f7c1ae4ed081648c35ea3825.js"></script>
+
+<script src="https://gist.github.com/sitecoremaster/32159636020a3fee4bb53dac06db16f2.js"></script>
+
+3. Make sure you have Sitecore 9.0+ (preferably 9.1 for the Hackathon judges :)) installed in your local environment.
+
+4. Run a Node Package Manager install in the root of your source code in command prompt.
+
+```npm install```
+
+5. Open up Task Manager and run the default gulp task, you can optionally also run the following command in a command prompt:
+
+```gulp```
+
+6. Should be all set to start making changes to your repository.  Any future changes, just run the default gulp command to publish changes to your Sitecore instance.
+
+### Package Installation
+
+To 
+
+## Configuration
+
+> TODO:  List how to configure the connect to the Twitter Feed
+
+## Usage
+
+> TODO: How do you use the tool
+
+## Video
+
+
+
+
+<details>
+  <summary>Original Requirements!</summary>
+  
+## Summary
+
 
 What is the purpose of your module? What problem does it solve and how does it do that?
 
@@ -71,3 +120,7 @@ And you can embed external images too:
 Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
 
 [![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
+
+
+</details>
+

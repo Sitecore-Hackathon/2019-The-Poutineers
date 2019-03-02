@@ -1,15 +1,21 @@
 ![Hackathon Logo](documentation/images/hackathon.png?raw=true "Hackathon Logo")
 
-# Submission Boilerplate
+# Introduction
 
-Welcome to Sitecore Hackathon 2019.
+Welcome to `The-Poutineers` team repository.
 
-The Hackathon site can be found at http://www.sitecorehackathon.org/sitecore-hackathon-2019/
+## Purpose
 
 The purpose of this repository is to provide a sample which shows how to structure the Hackathon submissions.
 
+## Documentation
 
-## Entry Submission Requirements 
+[documentation/Readme.md](documentation)
+
+<details>
+  <summary>Original Requirements!</summary>
+  
+  ## Entry Submission Requirements 
 
 All teams are required to submit the following as part of their entry submission on or before the end of the Hackathon on **Friday March 1st 2019 at 8PM EST**. The modules should be based on [Sitecore 9.1 (Initial Release)](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/91/Sitecore_Experience_Platform_91_Initial_Release.aspx).
 
@@ -36,3 +42,6 @@ All teams are required to submit the following as part of their entry submission
   - What problem was solved
   - How did you solve it
   - What is the end result
+
+</details>
+
