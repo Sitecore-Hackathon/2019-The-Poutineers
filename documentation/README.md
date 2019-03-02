@@ -11,6 +11,15 @@ The Social Assistant can run on any of the latest versions of Sitecore, and has 
 - Sitecore 9.1 XP, XM
 - Sitecore 9.0.2 XP, XM
 
+### Software Pre-requisites
+
+- NPM?
+- Node?
+
+### Service Pre-requisites
+
+- Twitter
+
 ## Installation
 
 ### Solution
@@ -72,7 +81,7 @@ module.exports = function () {
 
 ### Package Installation
 
-To 
+To install the latest stable package, go to the releases tab and download the latest zip or go to [sc.package](/sc.package/) directory.
 
 ## Configuration
 

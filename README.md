@@ -10,7 +10,7 @@ The purpose of this repository is to provide a sample which shows how to structu
 
 ## Documentation
 
-[documentation/Readme.md](documentation)
+To learn more about `The Poutineers` Sitecore Social Assistant, refer to the [Documentation](documentation/Readme.md).
 
 <details>
   <summary>Original Requirements!</summary>
