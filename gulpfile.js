@@ -9,7 +9,6 @@ var exec = require("child_process").exec;
 var merge = require("merge-stream");
 var runSequence = require("run-sequence");
 var spawn = require('child_process').spawn;
-const argv = require('yargs').argv;
 
 var $ = require('gulp-load-plugins')({ lazy: true });
 var utils = require('./build/utils.js');
