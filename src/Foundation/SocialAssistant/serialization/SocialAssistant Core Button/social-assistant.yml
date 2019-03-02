@@ -5,6 +5,12 @@ Template: "8f3d8f9b-2d76-4ace-803f-35415d2b230a"
 Path: "/sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Experience/social-assistant"
 DB: core
 SharedFields:
+- ID: "89730ec0-79ce-4b64-aa50-8c45d38d2d0d"
+  Hint: Access Key
+  Value: Social Assistant
+- ID: "8bb9a5e3-cae8-49c6-b830-258a51d970c9"
+  Hint: ID
+  Value: chkSocialAssistant
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -35,3 +41,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "c95d21bd-66c3-444b-a37f-d346cbaf2b55"
+      Hint: Header
+      Value: Social Assistant

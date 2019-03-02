@@ -26,7 +26,7 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           id="{28D7AA23-A9A3-4ABC-9DE6-AA717F6177CD}"
-          par="PageCodeScriptFileName=%2fscripts%2fcommand.js&amp;Click=trigger%3abutton%3aclick&amp;Command=SocialAssistant&amp;Id=lgButton"
+          par="PageCodeScriptFileName=%5csitecore%5cshell%5cclient%5cSitecore%5cExperienceEditor%5cCommands%5cSocialAssistant.js&amp;Click=trigger%3abutton%3aclick&amp;Command=SocialAssistant&amp;Id=lgButton"
           ph=""
           uid="{B2081667-2D3F-430C-B63B-5DCD1F491540}" />
       </d>
