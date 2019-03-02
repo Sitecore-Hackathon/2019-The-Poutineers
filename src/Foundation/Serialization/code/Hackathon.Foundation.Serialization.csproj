@@ -110,7 +110,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config.disabled" />
@@ -130,9 +129,6 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
