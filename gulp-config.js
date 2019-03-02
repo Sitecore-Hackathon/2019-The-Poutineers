@@ -1,5 +1,5 @@
 module.exports = function () {
-    var sitecoreRoot = "c:\\inetpub\\wwwroot\\schackathon.sc";
+    var sitecoreRoot = "C:\\inetpub\\wwwroot\\generic-91.sc";
     var config = {
         websiteRoot: sitecoreRoot,
         sitecoreLibraries: sitecoreRoot + "\\bin",
@@ -7,7 +7,7 @@ module.exports = function () {
         licensePath: sitecoreRoot + "\\App_Data\\license.xml",
         runCleanBuilds: false,
         MSBuildToolsVersion: "auto",
-        buildConfiguration: "Debug",
+        buildConfiguration: "Debug"
     };
     return config;
 };

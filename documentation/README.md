@@ -59,10 +59,10 @@ module.exports = function () {
 ```xml
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <publishUrl>[SitecoreWebsitePath]</publishUrl>
+        <publishUrl>[SitecoreUrl]</publishUrl>
         <ExcludeFilesFromDeployment>packages.config</ExcludeFilesFromDeployment>
     </PropertyGroup>
-    <Import Project="./publishsettings.targets.user" Condition="exists('./publishsettings.targets.user')" /> 
+    <Import Project="./publishsettingsdebug.targets.user" Condition="exists('./publishsettingsdebug.targets.user')" /> 
 </Project>
 ```
 

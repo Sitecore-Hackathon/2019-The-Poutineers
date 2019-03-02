@@ -6,6 +6,8 @@ var foreach = require('gulp-foreach');
 var msbuild = require('gulp-msbuild');
 var debug = require('gulp-debug');
 var config = require('../gulp-config.js')();
+var xml2js = require('xml2js');
+var fs = require('fs');
 var Utils = {};
 
 Utils.CleanConfigs = function (location, layerName) {
@@ -24,6 +26,40 @@ Utils.CleanProjectFiles = function (layerName) {
 
     // Clean Project Files
 
+}
+
+Utils.GetSiteUrl = function () {
+    var publishFile = Utils.GetPublishSettingsFile();
+
+    try {
+        var configuration = Utils.GetConfiguration(publishFile);
+
+        return configuration.Project.PropertyGroup[0].publishUrl[0];
+    } catch (error) {
+        error.message = "Could not get the site Url."
+        throw(error);
+    }
+}
+
+Utils.GetPublishSettingsFile = function() {
+    if (fs.exists("./publishsettingsdebug.targets.user"))
+        return "./publishsettingsdebug.targets.user";
+        
+    return "./publishsettingsdebug.targets";
+}
+
+Utils.GetConfiguration = function(path) {
+    var data = fs.readFileSync(path);
+
+    var parser = new xml2js.Parser();
+    var content;
+
+    parser.parseString(data, function(err, result) {
+        if (err !== null) throw err;
+            content = result;
+    });
+
+    return content;
 }
 
 Utils.PublishProjects = function (location, dest) {
