@@ -9,11 +9,10 @@ var exec = require("child_process").exec;
 var merge = require("merge-stream");
 var runSequence = require("run-sequence");
 var spawn = require('child_process').spawn;
-const argv = require('yargs').argv
-
-var config = require('./gulp-config.js')();
+const argv = require('yargs').argv;
 
 var $ = require('gulp-load-plugins')({ lazy: true });
+var utils = require('./build/utils.js');
 
 var config;
 if (fs.existsSync("./gulp-config.user.js")) {
@@ -26,8 +25,7 @@ module.exports.config = config;
 
 
 // Default Task
-gulp.task('default', ['__task:PublishProjects', '__task:compile-assets'], function () { });
-gulp.task('init', ['__task:initialization'], function () { });
+gulp.task('default', ['__task:PublishProjects', '__task:DeployUnicorn'], function () { });
 
 ///////////////////////////////////////
 //    Build the Solution
@@ -63,20 +61,10 @@ gulp.task("__task:PublishProjects", function (callback) {
 });
 
 ///////////////////////////////////////
-//     Compile Assets
+//    Deploy Unicorn Files
 ///////////////////////////////////////
-gulp.task('__task:compile-assets', function (callback) {
-    return runSequence("__task:compile-styles", callback);
-});
-
-gulp.task('__task:compile-styles', function (callback) {
-
-    return gulp
-        .src(config.styles.source)
-        .pipe($.sass(config.options.sass))
-        .pipe($.flatten())
-        .pipe(gulp.dest(config.styles.build));
-
+gulp.task("__task:DeployUnicorn", function (callback) {
+    // TODO: Implement Unicorn Function
 });
 
 gulp.task("publish-foundation", function () {
