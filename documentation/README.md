@@ -20,11 +20,43 @@ To install the solution to start making changes to the implementation, follow th
 1. Clone the repository to your computer.
 2. Update the configuration to match your environment.
 
-<script src="https://gist.github.com/sitecoremaster/21eb4aba96d837c892e97f26173d1b87.js"></script>
+`{Root}\src\Foundation\Serialization\App_Config\Include\Environment.config`
+```xml
+<?xml version="1.0"?>
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/" xmlns:role="http://www.sitecore.net/xmlconfig/role/">
+    <sitecore>
+        <sc.variable name="sourceFolder" value="[PathToSrcCode]\src" />
+    </sitecore>
+</configuration>
+```
 
-<script src="https://gist.github.com/sitecoremaster/da402d25f7c1ae4ed081648c35ea3825.js"></script>
+`{Root}\gulp-config.js`
+```javascript
+module.exports = function () {
+    var sitecoreRoot = "[SitecoreWebsitePath]";
+    var config = {
+        websiteRoot: sitecoreRoot,
+        sitecoreLibraries: sitecoreRoot + "\\bin",
+        solutionName: "Hackathon.ThePoutineers",
+        licensePath: sitecoreRoot + "\\App_Data\\license.xml",
+        runCleanBuilds: false,
+        MSBuildToolsVersion: "auto",
+        buildConfiguration: "Debug",
+    };
+    return config;
+};
+```
 
-<script src="https://gist.github.com/sitecoremaster/32159636020a3fee4bb53dac06db16f2.js"></script>
+`{Root}\publishsettingsdebug.target`
+```xml
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <publishUrl>[SitecoreWebsitePath]</publishUrl>
+        <ExcludeFilesFromDeployment>packages.config</ExcludeFilesFromDeployment>
+    </PropertyGroup>
+    <Import Project="./publishsettings.targets.user" Condition="exists('./publishsettings.targets.user')" /> 
+</Project>
+```
 
 3. Make sure you have Sitecore 9.0+ (preferably 9.1 for the Hackathon judges :)) installed in your local environment.
 
