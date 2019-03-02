@@ -9,7 +9,6 @@
 The Social Assistant can run on any of the latest versions of Sitecore, and has been tested against:
 
 - Sitecore 9.1 XP, XM
-- Sitecore 9.0.2 XP, XM
 
 ### Software Pre-requisites
 
