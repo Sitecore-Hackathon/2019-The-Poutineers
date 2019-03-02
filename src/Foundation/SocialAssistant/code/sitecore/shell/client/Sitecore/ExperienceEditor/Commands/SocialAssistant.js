@@ -10,7 +10,7 @@
                 var dialogHeight = '650px;';
 
                 var dialogFeatures = "dialogMinHeight: " + dialogHeight + "dialogMinWidth: " + dialogWidth;
-                ExperienceEditor.Dialogs.showModalDialog('/unicorn.aspx', '', dialogFeatures, null, function (result) {
+                ExperienceEditor.Dialogs.showModalDialog('https://twitter.com/search?q=%23SCHackathon', 'Sitecore Social Assistant', dialogFeatures, null, function (result) {
                     alert("hi");
                 });
             }
