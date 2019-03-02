@@ -1,0 +1,10 @@
+﻿<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+    <sitecore>
+        <pipelines>
+            <httpRequestBegin>
+                <processor type="Hackathon.Foundation.SocialAssistant.Pipelines.HttpRequestBegin.ApplyCSPProcessor, Hackathon.Foundation.SocialAssistant" patch:after="processor[contains(@type, 'SiteResolver')]">
+                </processor>
+            </httpRequestBegin>
+        </pipelines>
+    </sitecore>
+</configuration>
