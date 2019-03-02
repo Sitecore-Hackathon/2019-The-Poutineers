@@ -9,9 +9,9 @@
                 var dialogWidth = '805px;';
                 var dialogHeight = '650px;';
 
-                var dialogFeatures = "dialogHeight: " + dialogHeight + "dialogWidth: " + dialogWidth;
-                ExperienceEditor.Dialogs.showModalDialog('http://www.twitter.com/', dialogFeatures, '', null, function (result) {
-
+                var dialogFeatures = "dialogMinHeight: " + dialogHeight + "dialogMinWidth: " + dialogWidth;
+                ExperienceEditor.Dialogs.showModalDialog('/unicorn.aspx', '', dialogFeatures, null, function (result) {
+                    alert("hi");
                 });
             }
         };
