@@ -6,18 +6,20 @@
 
 ## Pre-requisites
 
-The Social Assistant can run on any of the latest versions of Sitecore, and has been tested against:
+The Social Assistant can run on the latest versions of Sitecore, and has been tested against:
 
 - Sitecore 9.1 XP, XM
 
 ### Software Pre-requisites
 
-- NPM?
-- Node?
+- NPM 6.8+
+- Node 9.11+
+- Python 2.7
+- Python Server
 
 ### Service Pre-requisites
 
-- Twitter
+- Twitter Developer Account
 
 ## Installation
 
@@ -76,11 +78,25 @@ module.exports = function () {
 
 ```gulp```
 
-6. Should be all set to start making changes to your repository.  Any future changes, just run the default gulp command to publish changes to your Sitecore instance.
+6. Go to your sitecore instance.
+
+7. Login at http(s)://instance.sc/sitecore
+
+8. Go to http(s)://instance.sc/unicorn.aspx?verb=sync to Sync all Sitecore items.
+
+9. Setup Python Server.. [Python Installation](/python.md)
+
+10. You should now be all set to start making changes to your repository.  Any future changes, just run the default gulp command to publish changes to your Sitecore instance.
 
 ### Package Installation
 
 To install the latest stable package, go to the releases tab and download the latest zip or go to [sc.package](/sc.package/) directory.
+
+1. Go into your instance of Sitecore and install the package, in the Package Installation Wizard.  [Learn More](https://youtu.be/1Jt2fMhTYQg)
+
+2. Python Server Installations?
+
+2. You should now be all set to go.  Read the configuration section to learn more about configuring
 
 ## Configuration
 
@@ -88,11 +104,15 @@ To install the latest stable package, go to the releases tab and download the la
 
 ## Usage
 
-> TODO: How do you use the tool
+To get started using the tool, is that first you must understand that it runs within the Sitecore Experience Editor.  When you are on the Sitecore Experience Editor you can go to the `Experience` tab to see the Social Assistant Button.
+
+![Social Assistant Button](https://i.imgur.com/DMINWDp.png)
+
+Once you click on the button, it will trigger a modal popup which will allow you to search for specific twitter handles or twitter usernames.  With this data you can then understand what social activities are going on for your twitter handles while editing your content.
 
 ## Video
 
-
+Watch Video Presentation
 
 
 <details>
