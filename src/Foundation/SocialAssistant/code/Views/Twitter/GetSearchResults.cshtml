@@ -1,0 +1,13 @@
+﻿@using TweetSharp
+@model TwitterSearchResult
+
+
+<div>
+    @foreach (var tweet in Model.Statuses)
+    {
+    <div style="border: 1px solid #333;padding:20px;margin-bottom: 10px;">
+        <strong>@tweet.Author</strong><br />
+        <p>@tweet.TextAsHtml</p>
+    </div>
+    }
+</div>

@@ -113,6 +113,7 @@
     <Content Include="sitecore\shell\client\Sitecore\ExperienceEditor\Commands\SocialAssistant.js" />
     <None Include="App_Config\Include\Foundation\SocialAssistant.config.disabled" />
     <None Include="Properties\PublishProfiles\Debug.pubxml" />
+    <Content Include="Views\Twitter\GetSearchResults.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

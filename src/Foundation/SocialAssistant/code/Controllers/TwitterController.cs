@@ -12,7 +12,7 @@ namespace Hackathon.Foundation.SocialAssistant.Controllers
     {
         private readonly ITwitterService _twitterService;
 
-        public TwitterController(ITwitterService twitterService)
+        public TwitterController()
         {
             //_twitterService = twitterService;
 
@@ -21,11 +21,15 @@ namespace Hackathon.Foundation.SocialAssistant.Controllers
         }
 
         [HttpGet]
-        public JsonResult GetSearchResults(string query)
+        public ActionResult GetSearchResults(string query)
         {
-            var results = _twitterService.Search(new SearchOptions() { Q = query });
+            OAuthRequestToken requestToken = _twitterService.GetRequestToken();
 
-            return Json(results, JsonRequestBehavior.AllowGet);
+            _twitterService.AuthenticateWith("796903847738404864-Mr5l9qUYaZVxChJsOxCjjUo6m2U9vlR", "0TPcZ1cp0EObV0GGRpApcC6133MRMJBGcnLvYbpuwaQ3D");
+
+            var results = _twitterService.Search(new SearchOptions() { Q = query, Resulttype = TwitterSearchResultType.Popular, Count = 20 });
+
+            return View(results);
         }
     }
 }

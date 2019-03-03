@@ -10,7 +10,7 @@
                 var dialogHeight = '650px;';
 
                 var dialogFeatures = "dialogMinHeight: " + dialogHeight + "dialogMinWidth: " + dialogWidth;
-                ExperienceEditor.Dialogs.showModalDialog('https://twitter.com/search?q=%23SCHackathon', 'Sitecore Social Assistant', dialogFeatures, null, function (result) {
+                ExperienceEditor.Dialogs.showModalDialog('http://generic-91.sc/api/sitecore/Twitter/GetSearchResults?query=schackathon', 'Sitecore Social Assistant', dialogFeatures, null, function (result) {
                     
                 });
             }
