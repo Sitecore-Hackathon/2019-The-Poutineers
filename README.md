@@ -44,6 +44,3 @@ All teams are required to submit the following as part of their entry submission
   - What is the end result
 
 </details>
-
-
-Tony TEst
