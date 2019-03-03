@@ -84,7 +84,7 @@ module.exports = function () {
 
 8. Go to http(s)://instance.sc/unicorn.aspx?verb=sync to Sync all Sitecore items.
 
-9. Setup Python Server.. [Python Installation](/python.md)
+9. Setup Python Server.. [Python Installation](/documentation/python.md)
 
 10. You should now be all set to start making changes to your repository.  Any future changes, just run the default gulp command to publish changes to your Sitecore instance.
 
