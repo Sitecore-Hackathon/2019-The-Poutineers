@@ -94,8 +94,6 @@ To install the latest stable package, go to the releases tab and download the la
 
 1. Go into your instance of Sitecore and install the package, in the Package Installation Wizard.  [Learn More](https://youtu.be/1Jt2fMhTYQg)
 
-2. Python Server Installations?
-
 2. You should now be all set to go.  Read the configuration section to learn more about configuring
 
 ## Configuration
