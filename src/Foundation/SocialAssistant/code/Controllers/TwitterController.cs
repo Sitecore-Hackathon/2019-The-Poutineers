@@ -17,9 +17,10 @@ namespace Hackathon.Foundation.SocialAssistant.Controllers
             //_twitterService = twitterService;
 
             //TODO: Handle DI
-            _twitterService = new TwitterService(new TwitterClientInfo() { ConsumerKey = "", ConsumerSecret = "" });
+            _twitterService = new TwitterService(new TwitterClientInfo() { ConsumerKey = "s86tTKVJvxHVqMgPRIxMmAoku", ConsumerSecret = "r6wAOLp96P0TzPaXbIs6YzTshxeSni2YYYA8OGebAYFzY72Mus" });
         }
 
+        [HttpGet]
         public JsonResult GetSearchResults(string query)
         {
             var results = _twitterService.Search(new SearchOptions() { Q = query });
